@@ -21,6 +21,8 @@ includes prominent notice that the work is derivative, and (2) the source code
 includes prominent notice of these three paragraphs for those parts of this
 code that are retained.
 
+This has been modified to work as needed by Stafford Horne.
+
 =============================================================================*/
 
 #include <stdlib.h>
