@@ -6,7 +6,8 @@ OBJ = .o
 # When on windows
 #EXE = .exe
 INCLUDES = -I. -I./include/$(ARCH)
-COMPILE_C = gcc -c -o $@ $(INCLUDES) -O2
+CFLAGS = $(INCLUDES) -O2 -Wall -Werror
+COMPILE_C = gcc -c -o $@ $(INCLUDES) $(CFLAGS)
 LINK = gcc -o $@
 
 ALL: softfloat$(OBJ) timesoftfloat$(EXE)

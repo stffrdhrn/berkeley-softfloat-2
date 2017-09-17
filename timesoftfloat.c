@@ -2044,8 +2044,8 @@ static void
      int8 tininessMode
  )
 {
-    uint8 roundingCode;
-    int8 tininessCode;
+    uint8 roundingCode = 0;
+    int8 tininessCode = 0;
 
     functionName = functions[ functionCode ].name;
     if ( roundingPrecision == 32 ) {
@@ -2466,6 +2466,7 @@ static void
 
 }
 
+int
 main( int argc, char **argv )
 {
     char *argPtr;
