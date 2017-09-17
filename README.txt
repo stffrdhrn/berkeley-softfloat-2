@@ -4,6 +4,11 @@ Package Overview for Berkeley SoftFloat Release 2c
 John R. Hauser
 2015 January 30
 
+Modified by Stafford Horne to fix gcc warnings and use for testing with
+GDB's built in sim fpu.
+
+See also: https://github.com/stffrdhrn/berkeley-testfloat-2
+Original Work: http://www.jhauser.us/arithmetic/SoftFloat.html
 
 ----------------------------------------------------------------------------
 Overview
