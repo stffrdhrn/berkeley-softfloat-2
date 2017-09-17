@@ -1,4 +1,5 @@
-
+#ifndef MILIEU_H
+#define MILIEU_H
 /*============================================================================
 
 This C header file is part of the Berkeley SoftFloat IEEE Floating-Point
@@ -36,6 +37,8 @@ This has been modified to work as needed by Stafford Horne.
 *----------------------------------------------------------------------------*/
 #define BITS64
 
+#include <stdint.h>
+
 /*----------------------------------------------------------------------------
 | Each of the following `typedef's defines the most convenient type that holds
 | integers of at least as many bits as specified.  For example, `uint8' should
@@ -47,13 +50,13 @@ This has been modified to work as needed by Stafford Horne.
 typedef char flag;
 typedef unsigned char uint8;
 typedef signed char int8;
-typedef int uint16;
-typedef int int16;
-typedef unsigned int uint32;
-typedef signed int int32;
+typedef uint16_t uint16;
+typedef int16_t int16;
+typedef uint32_t uint32;
+typedef int32_t int32;
 #ifdef BITS64
-typedef unsigned long long int uint64;
-typedef signed long long int int64;
+typedef uint64_t uint64;
+typedef int64_t int64;
 #endif
 
 /*----------------------------------------------------------------------------
@@ -64,13 +67,13 @@ typedef signed long long int int64;
 *----------------------------------------------------------------------------*/
 typedef unsigned char bits8;
 typedef signed char sbits8;
-typedef unsigned short int bits16;
-typedef signed short int sbits16;
-typedef unsigned int bits32;
-typedef signed int sbits32;
+typedef uint16_t bits16;
+typedef int16_t sbits16;
+typedef uint32_t bits32;
+typedef int32_t sbits32;
 #ifdef BITS64
-typedef unsigned long long int bits64;
-typedef signed long long int sbits64;
+typedef uint64_t bits64;
+typedef int64_t sbits64;
 #endif
 
 #ifdef BITS64
@@ -100,3 +103,4 @@ enum {
     TRUE  = 1
 };
 
+#endif /* MILIEU_H */
