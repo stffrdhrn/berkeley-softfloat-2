@@ -1,5 +1,5 @@
 
-ARCH = 386-Win32-GCC
+ARCH = x86-gcc
 VPATH = ./include/$(ARCH)
 
 OBJ = .o
